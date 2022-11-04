@@ -1,0 +1,135 @@
+Versioning in Software Development
+
+Version Control Systems:
+Local 
+Centralized
+Distributed
+  Git is a distrubted version control system
+  git  maintains a record of the changes made
+
+
+  As a DevOps engineer what are your roles in Git:
+    Ensure that developer environments are configured and secured
+    Project onboarding 
+    Create repositories in SCM 
+    Create teams in SCM and assign members 
+
+  What do you use for versioning in your projects:
+  We used Git and Github
+
+  Project:
+  
+
+  Agile environment
+  =============
+  sprint is a development cycle of about 10 working days 
+  Task to onboard Client 
+
+1. Create Github Account
+2. Create organisation in github
+3. Create repos
+4. create TEAMS and add members
+5. assign roles to team members
+6. ensure Git and relevant IDEs are installed by developers  
+
+
+git add:
+moves file to staging area
+
+git commit:
+moves file to the local repositories
+assigns a commit ID
+
+git push:
+moves file to the remote repo [github]
+push commtied changes to the project repo
+
+configure git global users details:
+git config --global user.name "Kelechi Nwosu"
+
+git show commitID
+
+also can do 
+git commit -a -m "commit message"
+
+git remote add:
+adds remote repo the environment
+eg: git remote add AliasName RepoName 
+
+git remote -v:
+this commands is used to verify 
+
+git pull:
+git pull aliasname branchname
+apply changes to remote to local environment
+
+git fetch:
+will apply changes to local repo but not the working area
+
+git merge:
+will apply changes from local repo to working area
+
+git clone:
+bring the entire code to the working area
+
+git diff: aliasname branchname
+
+what is .gitignore used for?:
+it records files and directories that shouldnt be tracked by git
+
+IQ: How many branches and environments are you supporting in your project?
+We maintain a minimum of three branches 
+development branch which is maintained in the developer environment
+staging branch which is maintained in the QA, test uat or stage environment
+master branch delivered to customers
+pull requests before added to master branch
+
+git branch:
+will list all the branches
+when you create a branch from another branch, the new branch will 
+inherit the characteristics of the original branch
+
+
+Branches:
+Are lines of development 
+
+git checkout nameofbranch:
+command used to switch working branch
+
+delete a branch:
+git branch -d nameofbranch
+
+git rebase:
+will combine each individual commit in one branch to each individual commmit in other branch
+
+git cherry-pick cID:
+picks specific commit to merge to branch
+
+git push origin=default aliasname
+
+
+pull request:
+allows people to review the code changes between two branches before the merge takes place
+
+tags:
+cannot be modified
+made after production 
+master recommended
+
+git tag nameoftag:
+
+
+git stash:
+back out of uncommitted changes
+
+git stash list:
+list of changes that are backed up
+
+git stash apply:
+resumes the work in progress for most recent backup
+git stash apply stash@{number of the stash}
+
+git stash drop stash:
+deletes the selected backup
+git stash pop stash:
+deletes and applies the backup 
